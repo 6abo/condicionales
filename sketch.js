@@ -1,3 +1,4 @@
+
 let ballX, ballY;  // Coordenadas de la pelota
 let ballRadius = 40;  // Radio de la pelota
 let ballSpeed = 8;  // Velocidad de movimiento
@@ -82,9 +83,13 @@ function changeBackgroundColor() {
 }
 
 function displayCollisionCount() {
-    fill(0); // Color del texto (negro)
-    textSize(50); // Tamaño del texto
+    fill(255); // Color del texto (negro)
+    textSize(20); // Tamaño del texto
     textAlign(LEFT_ARROW, TOP); // Alineación del texto
     text("Colisiones: " + collisionCount, 40, 40); // Mostrar el contador en la esquina superior izquierda
+    text("Mueve la pelota con las flechas: ", 40, 80);
 }
+
+
+
 
